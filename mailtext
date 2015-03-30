@@ -1,0 +1,22 @@
+Hallo {first_name} {last_name},
+
+vielen Dank für Deine regelmäßige Zahlung des Mitgliedsbeitrags.
+
+Um diese Zahlungen automatisiert verarbeiten zu können, ist es notwendig,
+dass Du Deine Mitglieds-ID im Verwendungszweck Deines Dauerauftrags angibst.
+
+Ich wäre Dir also dankbar, wenn Du diesen Verwendungszweck auf den folgenden Text
+ändern könntest:
+
+> Beitrag shack {last_name} {first_name} {id}
+
+Vielen Dank im Voraus!
+
+Gruß
+D
+
+-- 
+David Mändlen		    	|   -  ASCII-Ribbon-Campaign
+shack e.V. 			|  ( ) against HTML-formatted
+Kassenwart			|   x  e-mails.
+GPG-Key: 0xa197dda1	    	|  / \ en.wikipedia.org/wiki/Plain_text
