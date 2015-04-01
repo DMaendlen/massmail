@@ -4,6 +4,10 @@
 # This script takes a list of recipients and sends an e-mail. Both, the list of
 # recipients and the e-mail are given as files.
 
+# fill out the following sender-related values:
+senderAddress = '1_shack@bifroe.st'
+subject = 'shack Beitrag / Verwendungszweck'
+
 import csv
 import sys
 import smtplib
@@ -17,7 +21,7 @@ def parseRecipientListFile(filename):
     - Each line has to be ended by a ';'
     - Each line must only contain one set of data
 
-    Returns a dict with the first row as keys for each following row, e.g.
+    Returns a list of dicts with the first row as keys for each following row, e.g.
     [last_name] [Mändlen]
     [first_name] [David]
     [id] [123]
@@ -40,20 +44,18 @@ def readMailTextFile(filename):
     return text
 
 def sendMail(recipientList, mailText):
-    senderAddress = 'damait06@localhost'
-
     for member in recipientList:
         recipientAddress = member['mail_address']
         msg = MIMEText(mailText.format(**member), _charset='utf-8')
         msg['From'] = senderAddress
         msg['To'] = recipientAddress
-        msg['Subject'] = 'shack Beitrag / Verwendungszweck'
+        msg['Subject'] = subject
 
-        print(msg.as_string())
+        #print(msg.as_string())
 
-        #s = smtplib.SMTP('localhost')
-        #s.sendmail(senderAddress, recipientAddress, msg.as_string())
-        #s.quit()
+        s = smtplib.SMTP('localhost')
+        s.sendmail(senderAddress, recipientAddress, msg.as_string())
+        s.quit()
 
 def main():
 

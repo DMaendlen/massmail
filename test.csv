@@ -1,2 +1,2 @@
-id,last_name,first_name,mail_address;
-1234,ln,fn,user@localhost;
+id,last_name,first_name,mail_address,foo;
+1234,ln,fn,1_mailsendertest@bifroe.st;
