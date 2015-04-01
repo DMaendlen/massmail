@@ -16,7 +16,7 @@ Nothing more, nothing less.
 How it works
 ------------
 
-./mailsender.py \<membershipdata.csv\> \<mail.txt\>
+./massmail.py \<membershipdata.csv\> \<mail.txt\>
 
 Caveats
 -------
