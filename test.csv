@@ -1,2 +1,2 @@
-id,last_name,first_name,mail_address,address,sinnlos0,sinnlos1,sinnlos2,sinnlos3,sinnlos4,sinnlos5;
-330,Mändlen,David,damait06@localhost,Gablenberger Hauptstr. 27a,70186,Stuttgart,sinnlos0,sinnlos1,sinnlos2,sinnlos3,sinnlos4,sinnlos5;
+id,last_name,first_name,mail_address;
+1234,ln,fn,user@localhost;
